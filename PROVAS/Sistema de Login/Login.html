@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/PROVAS/Sistema de Login/css/stylesheet.css">
+
+</head>
+
+<body>
+
+
+    <div class="login-container">
+        <h1>Login</h1>
+        
+        <form id="login-form">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <p id="login-error-message" class="error-message"></p>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p id="recover">Esqueceu sua senha? 
+          <a href="#" id="recover-link">Clique Aqui.</a>
+        </p>
+
+        <p id="signup-text">Novo usuário? 
+          <a href="/PROVAS/Sistema de Login/index.html" id="create-account-button">Criar nova conta</a>
+        </p>
+
+    </div>
+
+    <script src="/PROVAS/Sistema de Login/js/login.js"></script>
+
+</body>
+</html>

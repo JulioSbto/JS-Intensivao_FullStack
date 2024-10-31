@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="/Exercicios Intermediarios/Projeto Barbearia/Barbearia Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo-nome">
+            <img src="/Exercicios Intermediarios/Projeto Barbearia/img/JB-Logo4 v2.jpg" alt="Logo" class="logo">
+            <h1 class="Nome-da-loja">J. Barber Shop</h1>
+        </div>
+
+        <div class="header-content">
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+
+            <div class="whatsapp-Agendamento"> 
+            <a href="https://api.whatsapp.com/send?phone=+5581996060917&text=Olá,%20gostaria%20de%20fazer%20um%20agendamento!" class="agendamento-button" target="_blank">
+                <i class="fab fa-whatsapp"></i> Agendamento</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section>
+        
+        <div class="background">
+            <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Barbearia2.jpg" alt="" class="bg">
+        </div>
+
+        <div class="overlay">
+            <p>Endereço</p>
+            <a>Rua ABC - 123, Boa Viagem, Recife</a>
+            <p>Horário de Funcionamento</p>
+            <a>Terça a Sábado das 08:00 às 20:00</a>
+            <p>Preços</p>
+            <a><p class="serviços">Corte: R$40,00</p></a>
+            <a><p class="serviços">Barba: R$30,00</p></a>
+            <a><p class="serviços">Cabelo + Barba: R$60,00</p></a>
+            <a><p class="serviços">Pigmentação: R$20,00</p></a>
+            <a><p class="serviços">Hidratação: R$20,00</p></a>
+        </div>
+
+        <div class="job">
+            <h2 class="trabalhos">Nossos trabalhos</h2>
+        </div>
+
+        <div class="Haircuts">
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte1.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte2.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte3.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte4.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte5.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte6.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte7.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte8.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte9.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte10.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte11.png" alt="" class="image-thumbnail">
+            </div>
+            <div class="box">
+                <img src="/Exercicios Intermediarios/Projeto Barbearia/img/Haircuts/Corte12.png" alt="" class="image-thumbnail">
+            </div>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="">Sobre</p>
+    </footer>
+
+    <script src="/Exercicios Intermediarios/Projeto Barbearia/Barbearia Script.js"></script>
+</body>
+</html>
