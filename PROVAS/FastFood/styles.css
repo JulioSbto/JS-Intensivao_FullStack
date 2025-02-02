@@ -109,6 +109,7 @@ main {
   display: flex;
   gap: 20px;
   padding: 20px;
+  align-items: flex-start;
 }
 
 .products {
@@ -172,12 +173,15 @@ main {
 }
 
 .cart {
-  flex: 1;
+  display: inline-block;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px;
+  height: auto;
+  width: auto;
+  max-width: 100%;
 }
 
 .cart h2 {
@@ -192,6 +196,8 @@ main {
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #ddd;
+  height: auto;
+  gap: 10px;
 }
 
 .item-list {
