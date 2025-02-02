@@ -1,0 +1,70 @@
+g<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PobreFood</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="/Assets/PobreFood.png" alt="PobreFood" class="logo" />
+        <h1>Descubra os melhores restaurantes perto de você!</h1>
+      </div>
+      <input type="text" placeholder="O que deseja comer?" />
+    </header>
+
+    <div class="restaurants">
+      <h2>Selecione um Restaurante</h2>
+      <div class="restaurant-list">
+        <div class="restaurant-card selected" onclick="switchRestaurant('restaurant1', this)">
+          <img src="/Assets/JotaLanches.png" alt="Jota Lanches" />
+          <h3>Jota Lanches</h3>
+        </div>
+        <div class="restaurant-card" onclick="switchRestaurant('restaurant2', this)">
+          <img src="/Assets/CantoDasMassas.png" alt="Canto das Massas" />
+          <h3>Canto das Massas</h3>
+        </div>
+        <div class="restaurant-card" onclick="switchRestaurant('restaurant3', this)">
+          <img src="/Assets/ChurrasTED.png" alt="Churrascaria do TED" />
+          <h3>Churrascaria do TED</h3>
+        </div>
+      </div>
+      
+
+    <main>
+      <section class="products">
+        <h2>Produtos</h2>
+        <div id="product-list"></div>
+      </section>
+
+      <aside class="cart">
+        <h2>Carrinho de compras</h2>
+        <div id="cart-items"></div>
+
+        <div class="coupon">
+          <input id="coupon-code" type="text" placeholder="Insira seu cupom" />
+          <button onclick="applyCoupon()">Aplicar Cupom</button>
+        </div>
+
+        <div class="item-list">
+          <div>
+            <span>Subtotal:</span>
+            <span id="subtotal">R$0.00</span>
+          </div>
+          <div>
+            <span>Desconto:</span>
+            <span id="discount">0%</span>
+          </div>
+          <div class="total">
+            <span>Total:</span>
+            <span id="total">R$0.00</span>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
